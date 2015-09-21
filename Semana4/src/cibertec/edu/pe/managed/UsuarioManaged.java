@@ -11,6 +11,7 @@ public class UsuarioManaged {
 	public String validar() {
 		String ir = "/ui/denegado.jsf";
 		if (usuario.getLogin().equalsIgnoreCase("CIBERTEC") && usuario.getPassword().equals("123")) {
+			usuario.setNombre("Hernán");
 			ir = "/ui/bienvenido.jsf";
 		}
 		return ir;

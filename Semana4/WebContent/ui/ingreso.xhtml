@@ -1,0 +1,21 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<f:view>
+	<h:head>
+		<h:body>
+			<h:form>
+				<h:panelGrid columns="2">
+					<h:outputText value="Ingrese login" />
+					<h:inputText value="#{usuarioManaged.usuario.login}" />
+					<h:outputText value="Password" />
+					<h:inputSecret value="#{usuarioManaged.usuario.password}" />
+					<h:commandButton value="Enviar" action="#{usuarioManaged.validar}"></h:commandButton>
+				</h:panelGrid>
+			</h:form>
+		</h:body>
+	</h:head>
+</f:view>
+
+</html>
